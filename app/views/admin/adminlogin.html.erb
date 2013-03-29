@@ -1,0 +1,14 @@
+<%= form_tag('/login' , :class => 'login') do %>
+
+<div class ="maintitle">Test Application </div>
+<p>
+<%=label_tag "UserName" %>
+<%=text_field_tag "username" %><br>
+</p>
+<p>
+<%= label_tag "Password"%>  
+<%=password_field_tag "password" %>
+</p>
+  <p class="login-submit"><%= submit_tag 'Login' , :class =>'login-button' %></p>
+  
+<% end%>

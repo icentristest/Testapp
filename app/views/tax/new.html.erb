@@ -1,0 +1,9 @@
+<h1>Tax Calculation</h1>
+
+<%= form_tag("/tax/open", :method => "post") do %>
+  <%= label_tag(:tax, "Enter Amount :") %> 
+  <%= text_field_tag(:tax) %> <br />
+  <%= label_tag(:cess, "Education Cess :") %>
+  <%= text_field_tag(:cess) %> <br />
+  <%= submit_tag("tax") %>
+<% end %>
